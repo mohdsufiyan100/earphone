@@ -1,0 +1,453 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 80%;
+}
+.backside{
+    width: 100vw;
+    height: 100vh;
+    background-image:linear-gradient(to right, rgb(174, 240, 236),rgb(22, 21, 21))
+}
+menu{
+    position: absolute;
+    top: 5%;
+}
+menu ul li{
+    display: inline-flex;
+    margin-left: 2.0rem;
+    font-size: 1.50rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.logo{
+    width: 10%;
+    display: flex;
+    margin: auto;
+    position: relative;
+    top: 5%;
+}
+.logobackground{
+    width: 170px;
+    height: 50px;
+    opacity: 80%;
+    position: absolute;
+    background-color: white;
+    transform: skewX(-30deg);
+    box-shadow: 0px 0px 10px 1px rgb(12, 11, 11);
+    /* display: flex; */
+}
+.sound p{
+    font-size: 3.0rem;
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 6%;
+    left: 20%;
+}
+.search input{
+    padding: 3px 10px 3px 20px;
+    border-radius: 20px;
+    border: 3px solid black;
+    margin-right: 4px;
+    display: none;
+    width: 120px;
+    animation: 1s input10;
+}
+@keyframes input10{
+    from{
+        width: 0;
+    }
+}
+.search button{
+    background-color: white;
+    border: none;
+    font-size: 1.80rem;
+    cursor: pointer;
+}
+.search{
+    background-color: white;
+    padding: 10px;
+    border-radius: 100px;
+    opacity: 80%;
+    font-size: 2.20rem;
+    float: right;
+    margin-right: 130px;
+    margin-top: 40px;
+    display: flex;
+}
+.product{
+    width: 100%;
+    height: 80%;
+    display: grid;
+    place-items: center;
+    position: absolute;
+    top: 10%;
+    animation: 3s ease-in-out product infinite;
+}
+@keyframes product{
+    0%{
+        top: 10%;
+    }
+    50%{
+        top: 8%;
+    }
+    100%{
+        top: 10%;
+    }
+}
+#img1{
+    display: grid;
+}
+#img2{
+    position: absolute;
+    top: 10%;
+    display: none;
+}
+.imgcategry{
+    position: absolute;
+    top: 40%;
+    left: 70%;
+}
+.back1{
+    height: 60px;
+    width: 60px;
+    border-radius: 20px;
+    background-color: white;
+    opacity: 90%;
+    box-shadow: 0px 0px 10px 1px rgb(12, 11, 11);
+    margin-bottom: 40px;
+}
+.back2{
+    height: 60px;
+    width: 60px;
+    border-radius: 20px;
+    background-color: white;
+    opacity: 90%;
+    box-shadow: 0px 0px 10px 1px rgb(12, 11, 11);
+}
+.img1 img{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: -1%;
+}
+.img2 img{
+    width: 100%;
+    position: absolute;
+    top: 65%;
+    left: -1%;
+}
+.detail{
+    position: absolute;
+    top: 25%;
+    left: 3%;
+    animation: 2s detail;
+}
+@keyframes detail{
+    from{
+        top: 50%;
+    }
+}
+.hedding{
+    float: left;
+}
+.hedding h1{
+    text-align: center;
+    font-size: 3.80rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.line1{
+    width: 398px;
+    height: 70px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    background-image: linear-gradient(to right, rgb(174, 240, 236),rgb(17, 16, 16), rgb(17, 16, 16), rgb(17, 16, 16), rgb(17, 16, 16), rgb(17, 16, 16));
+    position: absolute;
+    top: 120%;
+    left: 0%;
+    animation: 1s line1;
+}
+.line1 p{
+    color: white;
+    margin-left: 110px;
+    margin-top: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    letter-spacing: .30rem;
+    font-size: 2.0rem;
+}
+.line2{
+    width: 398px;
+    height: 70px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    background-image: linear-gradient(to right, rgb(174, 240, 236),rgb(17, 16, 16), rgb(17, 16, 16), rgb(17, 16, 16), rgb(17, 16, 16), rgb(17, 16, 16));
+    position: absolute;
+    top: 190%;
+    left: 0%;
+    animation: 2s line2;
+}
+.line2 p{
+    color: white;
+    margin-left: 180px;
+    margin-top: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    letter-spacing: .30rem;
+    font-size: 2.0rem;
+}
+.line3{
+    width: 398px;
+    height: 70px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    background-image: linear-gradient(to right, rgb(174, 240, 236),rgb(17, 16, 16), rgb(17, 16, 16), rgb(17, 16, 16), rgb(17, 16, 16), rgb(17, 16, 16));
+    position: absolute;
+    top: 260%;
+    left: 0%;
+    animation: 3s line3;
+}
+.line3 p{
+    color: white;
+    margin-left: 140px;
+    margin-top: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    letter-spacing: .30rem;
+    font-size: 2.0rem;
+}
+@keyframes line1{
+    from{
+        left: -160%;
+    }
+}
+@keyframes line2{
+    from{
+        left: -160%;
+    }
+}
+@keyframes line3{
+    from{
+        left: -160%;
+    }
+}
+.social{
+    position: absolute;
+    top: 0%;
+    left: 93.25%;
+    background-color: black;
+    opacity: 70%;
+    padding: 180px 20px 180px 20px;
+}
+.facebook{
+    color: white;
+    font-size: 4.0rem;
+    margin-bottom: 60px;
+    cursor: pointer;
+}
+.insta{
+    color: white;
+    font-size: 4.0rem;
+    margin-bottom: 60px;
+    cursor: pointer;
+}
+.youtube{
+    color: white;
+    font-size: 4.0rem;
+    cursor: pointer;
+}
+.about10{
+    display: none;
+}
+.menubutton{
+    display: none;
+}
+@media(max-width: 375px){
+    menu ul li{
+        color: white;
+        display: flex;
+        margin-top: 40px;
+    }
+    .menuback{
+        width: 100vw;
+        height: 100vh;
+        background: black;
+        opacity: 90%;
+        position: absolute;
+        top: 0%;
+    }
+    menu{
+        margin-left: 110px;
+        margin-top: 130px;
+        width: 100%;
+        height: 100%;
+    }
+    #menubaar{
+        display: none;
+        transition: all 1s;
+    }
+    .backside{
+        height: 190vh;
+    }
+    .detail{
+        position: absolute;
+        top: 100%;
+        left: 3%;
+    }
+    .line1{
+        width: 298px;
+        height: 50px;
+        border-bottom-right-radius: 20px;
+        border-top-right-radius: 20px;
+        position: absolute;
+        top: 110%;
+        left: 5%;
+        animation: 1s line1;
+    }
+    .logo{
+        width: 20%;
+        top: 1%;
+    }
+    .logobackground{
+        width: 100px;
+        height: 30px;
+    }
+    .sound p{
+        font-size: 2.0rem;
+        top: 6%;
+        left: 10%;
+    }
+    .line1 p{
+        margin-left: 110px;
+        font-size: 1.0rem;
+    }
+    .line2{
+        width: 298px;
+        height: 50px;
+        position: absolute;
+        top: 150%;
+        left: 5%;
+        animation: 1s line1;
+    }
+    .line2 p{
+        margin-left: 110px;
+        font-size: 1.0rem;
+    }
+    .line3{
+        width: 298px;
+        height: 50px;
+        position: absolute;
+        top: 190%;
+        left: 5%;
+        animation: 1s line1;
+    }
+    .line3 p{
+        margin-left: 110px;
+        font-size: 1.0rem;
+    }
+    .imgcategry{
+        position: absolute;
+        top: 80%;
+        left: 30%;
+        display: flex;
+    }
+    .back1{
+        margin-right: 20px;
+    }
+    .img1 img{
+        width: 40%;
+        position: absolute;
+        top: 0;
+        left: 1%;
+    }
+    .img2 img{
+        width: 40%;
+        position: absolute;
+        top: 8%;
+        left: 58%;
+    }
+    .search button{
+        background-color: white;
+        border: none;
+        font-size: 1.80rem;
+        cursor: pointer;
+    }
+    .search{
+        background-color: white;
+        padding: 5px;
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+    .search input{
+        padding: 0px 10px 0px 10px;
+        border: 2px solid black;
+        margin-right: 4px;
+        display: none;
+        width: 50px;
+    }
+    .product{
+        width: 100%;
+        height: 40%;
+    }
+    #img1{
+        display: grid;
+        width: 350px;
+    }
+    #img2{
+        position: absolute;
+        top: 10%;
+        display: none;
+        width: 300px;
+    }
+    .social{
+        position: absolute;
+        top: 45%;
+        left: 27%;
+        display: flex;
+        background: none;
+    }
+    .facebook{
+        color: white;
+        margin-right: 20px;
+        font-size: 2.0rem;
+    }
+    .insta{
+        color: white;
+        margin-right: 20px;
+        font-size: 2.0rem;
+    }
+    .youtube{
+        color: white;
+        font-size: 2.0rem;
+    }
+    .about10{
+        position: absolute;
+        top: 0%;
+        left: 28%;
+        display: block;
+    }
+    .about10 img{
+        width: 80px;
+        margin: auto;
+        display: flex;
+        clip-path: circle(40% at 52% 40%);
+    }
+    .name{
+        text-align: center;
+        margin-top: -10px;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: yellowgreen;
+    }
+    span{
+        color: white;
+    }
+    .menubutton{
+        position: absolute;
+        top: 3%;
+        left: 3%;
+        display: block;
+    }
+    .menubutton button{
+        background-color: transparent;
+        color: black;
+        border: none;
+        font-size: 1.60rem;
+    }
+}

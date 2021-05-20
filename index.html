@@ -4,9 +4,100 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <title>Sound</title>
 </head>
 <body>
-    <p>hello everyone</p>
+    
+    <div class="backside">
+        <div class="logo">
+            <div class="logobackground">
+            </div>
+            <div class="sound">
+                <p>Sound</p>
+            </div>
+        </div>
+        <div class="search">
+            <input type="text" id="input" placeholder="Search">
+            <button onclick="search()"><i class="fa fa-search"></i></button>
+        </div>
+        <div class="product">
+            <img src="image/earphone-removebg-preview.png" id="img1">
+            <img src="image/earphone2-removebg-preview.png" id="img2">
+        </div>
+        <div class="imgcategry">
+            <div class="back1"></div>
+            <div class="back2"></div>
+            <div class="img1" onclick="imggg1()">
+                <img src="image/earphone-removebg-preview.png" alt="">
+            </div>
+            <div class="img2" onclick="imggg2()">
+                <img src="image/earphone2-removebg-preview.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="detail">
+        <div class="hedding">
+            <h1>FEEL <br> INTO THE NEXT</h1>
+        </div>
+        <div class="line1">
+            <p>Long Battery Life</p>
+        </div>
+        <div class="line2">
+            <p>Clear Sound</p>
+        </div>
+        <div class="line3">
+            <p>1Year Warrenty</p>
+        </div>
+    </div>
+    <div class="menubutton">
+        <button onclick="menu()"><i class="fa fa-align-justify"></i></button>
+    </div>
+    <div id="menubaar">
+        <div class="menuback"></div>
+        <menu>
+            <ul>
+                <li>About us</li>
+                <li>Contact us</li>
+            </ul>
+        </menu>
+        <div class="social">
+            <div class="facebook">
+                <i class="fa fa-facebook-square"></i>
+            </div>
+            <div class="insta">
+                <i class="fa fa-instagram"></i>
+            </div>
+            <div class="youtube">
+                <i class="fa fa-youtube-play"></i>
+            </div>
+        </div>
+        <div class="about10">
+            <img src="image/sufi2.png">
+            <div class="name">
+               <p><span>Mohd Sufiyan</span><br> Web Developer & Designer</p>
+            </div>
+        </div>
+    </div>
+    
+<script>
+    function search(){
+        document.getElementById('input').style.display = 'flex';
+    }
+
+    function imggg1(){
+        document.getElementById('img1').style.display = 'none';
+        document.getElementById('img2').style.display = 'grid';
+    }
+    function imggg2(){
+        document.getElementById('img1').style.display = 'grid';
+        document.getElementById('img2').style.display = 'none';
+    } 
+    function menu(){
+        document.getElementById('menubaar').style.display = 'block';
+    }
+
+</script>
 </body>
 </html>
