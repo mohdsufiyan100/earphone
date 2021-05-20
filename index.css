@@ -410,6 +410,7 @@ menu ul li{
         color: white;
         margin-right: 20px;
         font-size: 2.0rem;
+        display: none;
     }
     .insta{
         color: white;
