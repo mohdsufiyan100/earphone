@@ -20,8 +20,11 @@
         </div>
         <div class="search">
             <input type="text" id="input" placeholder="Search">
-            <button onclick="search()"><i class="fa fa-search"></i></button>
+            <div class="discover">
+                <button id="search0"><i class="fa fa-search"></i></button>
+            </div>
         </div>
+        
         <div class="product">
             <img src="image/earphone-removebg-preview.png" id="img1">
             <img src="image/earphone2-removebg-preview.png" id="img2">
@@ -52,7 +55,7 @@
         </div>
     </div>
     <div class="menubutton">
-        <button onclick="menu()"><i class="fa fa-align-justify"></i></button>
+        <button id="menu0"><i class="fa fa-align-justify"></i></button>
     </div>
     <div id="menubaar">
         <div class="menuback"></div>
@@ -82,9 +85,27 @@
     </div>
     
 <script>
-    function search(){
-        document.getElementById('input').style.display = 'flex';
-    }
+    document.getElementById('search0').addEventListener('click',function abc(){
+        let input0 = document.getElementById('input');
+        if(input0.style.display == 'flex'){
+            input0.style.display = 'none';
+        }
+        else{
+            input0.style.display = 'flex';
+        }
+    })
+    document.getElementById('menu0').addEventListener('click',function abcd(){
+        let menu1 = document.getElementById('menubaar');
+        if(menu1.style.display == 'flex'){
+            menu1.style.display = 'none';
+        }
+        else{
+            menu1.style.display = 'flex';
+        }
+    })
+    // function search(){
+    //     document.getElementById('input').style.display = 'flex';
+    // }
 
     function imggg1(){
         document.getElementById('img1').style.display = 'none';
@@ -94,9 +115,9 @@
         document.getElementById('img1').style.display = 'grid';
         document.getElementById('img2').style.display = 'none';
     } 
-    function menu(){
-        document.getElementById('menubaar').style.display = 'block';
-    }
+    // function menu(){
+    //     document.getElementById('menubaar').style.display = 'block';
+    // }
 
 </script>
 </body>
